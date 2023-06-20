@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+body {
+  line-height: 1.5;
+  background-color: black;
+  color: white;
+
+}
+
+header {
+  width: 100%;
+  min-height: 4.375rem; 
+  border-bottom: pink 0.1875rem solid;
+  position: fixed;
+  z-index: 2;
+  background: black;
+  
+}
+
+header a {
+  text-decoration: none;
+}
+
+/* hamburger */
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.1875rem 0.75rem;
+}
+
+.hamburger span {
+  display: block;
+  height: 0.25rem;
+  width: 1.5625rem;
+  margin-bottom: 0.25rem;
+  position: relative;
+  background: purple;
+  z-index: 1;
+}
+
+.mb-4 {
+  margin-bottom: 0.25rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.nav-btn {
+  background: black;
+     
+ border :0.0625rem solid black;
+}
+
+.elle {
+  font-size: 1.25rem;
+  font-family: cursive;
+  font-weight: bold;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/* sidebar */
+.sidebar {
+  width: 50%;
+  background-color: rgba(200, 162, 200, 1);
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: grey;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 0.625rem;
+}
+
+.sidebar li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #21c0f5;
+}
+
+.sidebar .pt {
+  padding-top: 2.5rem;
+  color: red;
+}
+
+/* space */
+.space {
+  padding-top: 6.25rem;
+}
+
+/* showcase */
+.showcase img {
+ height: 25vh;
+}
+
+.showcase {
+  margin-left: 0.625rem;
+  display: grid;
+  grid-template-columns:  1fr 1fr ;
+  column-gap: 0.0625rem;
+  z-index: 1;
+  
+}
+
+img:hover {
+  opacity: 0.3;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  perspective: 62.5rem;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+.image-container:hover .overlay {
+  opacity: 1.0;
+}
+
+.hover-btn {
+  display: none;
+  
+}
+.hover-btn a {text-decoration:none;
+color: white;
+}
+.image-container:hover .overlay .hover-btn {
+  display: block;
+  position: absolute;
+  bottom: 0.4375rem;
+  background-color: grey;
+  padding: 0.3125rem 0.625rem;
+  width: 5.625rem;
+  border :0.0625rem solid white ;
+  font-size :0.625rem ;
+}
+
+.image {
+  transition: transform 0.3s ease;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container:hover .image {
+  transform: translateZ(-3.125rem);
+}
+
+.image-container:hover .title {
+  display: none;
+}
+
+.image {
+  transition: transform 0.3s ease;
+}
+
+.title,
+h2 {
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+
+ 
+.more-btn {
+  display: block;
+  position: absolute;
+  background: grey;
+  width: 90%;
+  color: white;
+  font-weight: bold;
+  padding: 0px 0.625rem;
+}
+
+.more {
+  width: 6.25rem;
+  height: 1.25rem;
+  display: block;
+  position: absolute;
+  padding: 0.3125rem 0.625rem;
+  width: 10rem;
+  margin-left: 6.25rem;
+}
+
+main {
+  width: 100%;
+  margin-right :18.75rem ;
+}
+
+.leg {
+  background: white;
+}
+
+footer {
+  border: 0.125rem solid white;
+}
+
+.square {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+  margin-right: 0.3125rem;
+  border: 0.125rem solid purple;
+}
+
+.leg {
+  display: flex;
+  align-items: center;
+  position :sticky ;
+}
+
+.leg button {
+width:7.5rem;
+  margin-right: 0.3125rem;
+  background: white;
+  border: none;
+}
+
+.offers {
+  padding: 0.375rem 0.125rem;
+}
+
+.logo {
+  width: 1.75rem;
+  margin-right: 0.3125rem;
+  background: white;
+  border: none;
+}
+.logo-side {
+  width: 1.75rem;
+  margin-right: 0.3125rem;
+  border: none;
+  rgba(200, 162, 200, 1)
+}
+.logo-side button {background: white;}
+.bra {
+  width: 2.5rem;
+  background: red;
+  border: none;
+}
+
+.slideshow {
+Text-align:center;}
+.slideshow img {
+  width: 10rem;
+  border: 0.1875rem solid white;
+ height: 25vh;
+}
+.space {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer {
+    background-color: #f2f2f2; 
+    text-align: center;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    position: sticky; /* Makes the footer stick to the bottom */
+    bottom: 0; /* Positions the footer at the bottom of the screen */
+    width: 100%; /* Ensures the footer spans the full width of the screen */
+    z-index: 2;
+    width: 100%;
+}
+footer  a{text-decoration:none;
+color:black;}
+.product-single {text-align:center;
+position: relative;
+  display: inline-block;}
+  .back{width: 50%;
+  background: black;
+  color :white ;
+  font-weight :bold;  
+  font-size:0.625rem;
+  text-align:left;
+  padding:0.625rem;
+  border:none;}
+  .sizes{text-align:left;
+  }
+  .sizes ul{text-decoration :underline ;
+  font-family :bold;}
+  .sizes ul li
+  {display:inline;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;}
+.info{text-align:left;}
+.no-style{list-style:none;}
+.bold{font-weight:bold;}
+.view-all{
+text-decoration :underline ;
+text-transform:uppercase ;
+  background: black;
+  color :white ;
+  font-weight :bold;  
+  font-size:0.625rem;
+  text-align:left;
+  padding:0.625rem;
+  border:none;}
+.tick {
+      display: inline-block;
+      width: 1.25rem;
+      height: 1.25rem;
+      border: 0.125rem solid #000;
+      border-radius: 50%;
+      margin-right: 0.625rem;
+      text-align: center;}
+      
+  .custom {width: 100%;}
+.custom h6{ background: grey;
+
+padding:0.625rem;}
+.sec-404{
+padding: 6.25rem 1.875rem;
+margin-left :0.625rem ;}
+.404-text{color: white;
+  line-height: 1.5;
+  z-index: 10;}      
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: top 0.3s;
+}
+.contact{background-color: white;
+      color: black;
+      padding: 0.3125rem 1.25rem;
+      border: none;
+      border-radius: 0.25rem;
+      font-size: 1rem;
+      cursor: pointer;}
+
+.custom h3 {font-size:10px;background: grey;
+
+padding:0.625rem;}
+
+.custom h4 {font-size:10px;background: grey;
+
+padding:0.625rem;}
+
+.custom h5 {font-size:10px;background: grey;
+
+padding:0.625rem;}
+
+h1{text-align:center;}
+.custom h2{font-size:10px;background: grey;
+
+padding:0.625rem;}
+

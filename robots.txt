@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /private/
+Disallow: /admin/
+
+Sitemap: http://www.crochet.co.ke/sitemap.xml
