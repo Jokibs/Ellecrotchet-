@@ -115,7 +115,7 @@ header a {
 }
 
 .showcase {
-  margin-left: 0.625rem;
+  margin-lft: 0.625rem;
   display: grid;
   grid-template-columns:  1fr 1fr ;
   column-gap: 0.0625rem;
