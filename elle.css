@@ -111,7 +111,8 @@ header a {
 
 /* showcase */
 .showcase img {
- height: 25vh;
+ 
+ width: 90%;
 }
 
 .showcase {
@@ -120,9 +121,8 @@ header a {
   grid-template-columns:  1fr 1fr ;
   column-gap: 0.0625rem;
   z-index: 1;
-  width: 90%;
+  
 }
-
 
 img:hover {
   opacity: 0.3;
@@ -132,7 +132,7 @@ img:hover {
   position: relative;
   display: inline-block;
   perspective: 62.5rem;
-  width: 100%;
+  width: 90%;
 }
 
 .overlay {
