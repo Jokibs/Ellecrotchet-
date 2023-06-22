@@ -282,7 +282,7 @@ width:7.5rem;
 .slideshow {
 Text-align:center;}
 .slideshow img {
-  width: 10rem;
+  max-width:99%;
   border: 0.1875rem solid white;
  height: 25vh;
 }
