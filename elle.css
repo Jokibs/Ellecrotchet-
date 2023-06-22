@@ -115,13 +115,14 @@ header a {
 }
 
 .showcase {
-  margin-lft: 0.625rem;
+  margin-left: 0.625rem;
   display: grid;
   grid-template-columns:  1fr 1fr ;
   column-gap: 0.0625rem;
   z-index: 1;
-  
+  width: 90%;
 }
+
 
 img:hover {
   opacity: 0.3;
