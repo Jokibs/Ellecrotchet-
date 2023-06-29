@@ -1,7 +1,7 @@
 * {margin: 0;padding: 0;}
            /* header */
 body {line-height: 1.5;background-color: black;color: white;
-text-transform: uppercase;}
+text-transform: ;}
 body a{text-decoration:none;
 color: white;}
 img{max-width: 90%;}
@@ -18,7 +18,7 @@ border-bottom: pink 0.1875rem solid;position: fixed;z-index: 2;background:black;
 .container {display: flex;align-items: center;}
 .nav-btn {background: black;border :0.0625rem solid black;}
 
-.elle {font-size: 1.25rem;font-family: cursive;text-transform:lowercase;
+.elle {font-size: 2.25rem;font-family: cursive;text-transform:lowercase;
 font-weight: bold;}
 
 .hidden {display: none;}
@@ -66,7 +66,7 @@ background: white;border: none;}
 .bra {width: 2.5rem;background: red;border: none;}
 
 .slideshow {Text-align:center;}
-.slideshow img {max-width:99%;border: 0.1875rem solid white;max-height: 25vh;}
+.slideshow img {max-width:90%;border: 0.1875rem solid white;max-height: 25vh;}
 .space {min-height: 100%;display: flex;flex-direction: column;}
 
 footer {background-color: #f2f2f2;margin-top: auto;position: sticky;bottom: 0;width: 100%;
@@ -91,4 +91,10 @@ border-radius: 50%;margin-right: 0.625rem;text-align: center;}
 .contact{background-color: white;color: black;
 padding: 0.3125rem 1.25rem;border: none;border-radius: 0.25rem;font-size: 1rem;cursor: pointer;}
 .custom h2,.custom h3,.custom h4,.custom h5,.custom h6{font-size:10px;background:grey;padding:.625rem}
-
+.blog-sec {padding:10px;
+border-bottom:3px solid white;}
+.blog-text{text-align:left;}
+.blog-text h1{ font-size:14px;text-align:left;
+}
+.r3ad-mor3{background: grey;}
+.blog-section {padding:10px;}
