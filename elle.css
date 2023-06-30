@@ -23,12 +23,13 @@ font-weight: bold;}
 
 .hidden {display: none;}
            /* sidebar */
-.sidebar {width: 50%;background-color: rgba(200, 162, 200, 1);height: 100%;position: fixed;left: 0;top: 0;color: grey;}
+.sidebar {width: 50%;background-color: rgba(200, 162, 200, 1);height: 100%;position: fixed;left: 0;top: 0;color: grey;text-align:center;}
 .sidebar ul {list-style-type: none;padding: 0;margin: 0;}
 .sidebar li {padding: 0.625rem;}
 .sidebar li a {color: #333;text-decoration: none;}
 .sidebar a:hover {color: #21c0f5;}
 .sidebar .pt {padding-top: 2.5rem;color: red;}
+.sidebar button {margin-left:5px;}
              /* space */
 .space {text-align:center;padding-top: 6.25rem;margin:auto;width: 90%;
 }
