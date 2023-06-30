@@ -12,20 +12,19 @@ border-bottom: pink 0.1875rem solid;position: fixed;z-index: 2;background:black;
          /* hamburger */
 .hamburger {display: inline-block;cursor: pointer;padding: 0.1875rem 0.75rem;}
 .hamburger span {display: block;height: 0.25rem;width: 1.5625rem;margin-bottom: 0.25rem;position: relative;background: purple;z-index: 1;}
-
+.hamburger.closed span:nth-child(1) {transform: rotate(70deg);}
+.hamburger.closed span:nth-child(3){transform: scaleX(0);}
+.hamburger.closed span:nth-child(2) {transform: rotate(105deg);}
 .mb-4 {margin-bottom: 0.25rem;}
-
 .container {display: flex;align-items: center;}
 .nav-btn {background: black;border :0.0625rem solid black;}
-
 .elle {font-size: 2.25rem;font-family: cursive;text-transform:lowercase;
 font-weight: bold;}
-
 .hidden {display: none;}
            /* sidebar */
 .sidebar {width: 50%;background-color: rgba(200, 162, 200, 1);height: 100%;position: fixed;left: 0;top: 0;color: grey;text-align:center;}
 .sidebar ul {list-style-type: none;padding: 0;margin: 0;}
-.sidebar li {padding: 0.625rem;}
+.sidebar li {padding: 0.625rem;text-align:left;}
 .sidebar li a {color: #333;text-decoration: none;}
 .sidebar a:hover {color: #21c0f5;}
 .sidebar .pt {padding-top: 2.5rem;color: red;}
