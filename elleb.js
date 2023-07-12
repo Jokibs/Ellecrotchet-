@@ -26,7 +26,7 @@ toggleButton2.addEventListener('click', function() {
     });
     
 // Store the text in a JavaScript variable
-    var myText = "  example:000 0000 000";
+    var myText = "  example:+254 752 057817";
 
     // Get the element to display the text
     var displayElement = document.getElementById('displayText');
