@@ -42,27 +42,5 @@ document.getElementById("thalia-btn").addEventListener("click", function() {
 
       window.open(url);
     });
-function openWhatsAppChat(message, phoneNumber) {
-  var encodedMessage = encodeURIComponent(message);
-  var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
-  window.open(url);
-}
 
-document.getElementById("pink-divide×mesh-skirt-btn").addEventListener("click", function() {
-  var message = "Hello, I'm interested in the pink divided mesh skirt.";
-  var phoneNumber = "+254114511439"; // Replace with the desired phone number
-  openWhatsAppChat(message, phoneNumber);
-});
-
-document.getElementById("fleece-mini-bag-crochet-btn").addEventListener("click", function() {
-  var message = "Hi, I'd like to inquire about the fleece mini bag crochet.";
-  var phoneNumber = "+254114511439"; // Replace with the desired phone number
-  openWhatsAppChat(message, phoneNumber);
-});
-
-document.getElementById("orange-crochet-skirt-btn").addEventListener("click", function() {
-  var message = "Hey, I'm interested in the orange crochet skirt. Can you provide more information?";
-  var phoneNumber = "+254114511439"; // Replace with the desired phone number
-  openWhatsAppChat(message, phoneNumber);
-});
 
