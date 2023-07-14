@@ -96,3 +96,9 @@ border-bottom:3px solid white;}
 }
 .r3ad-mor3{background: grey;}
 .blog-section {padding:10px;}
+hr{
+        border: 0;
+        height: 3px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(9, 84, 132), rgba(0, 0, 0, 0));
+        margin-bottom :10px;
+}
