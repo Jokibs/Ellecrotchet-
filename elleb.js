@@ -38,7 +38,7 @@ function createWhatsAppButtonListener(buttonId, message) {
   if (button) {
     button.addEventListener("click", function() {
       var encodedMessage = encodeURIComponent(message);
-      var phoneNumber = "xxxnumber"; // Replace with the desired phone number
+      var phoneNumber = "+254114511439"; // Replace with the desired phone number
 
       var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
 
