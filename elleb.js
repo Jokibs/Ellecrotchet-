@@ -33,12 +33,13 @@ toggleButton2.addEventListener('click', function() {
 
     // Set the text in the display element
     displayElement.textContent = myText;
+    
 function createWhatsAppButtonListener(buttonId, message) {
   var button = document.getElementById(buttonId);
   if (button) {
     button.addEventListener("click", function() {
       var encodedMessage = encodeURIComponent(message);
-      var phoneNumber = "+254114511439"; // Replace with the desired phone number
+      var phoneNumber = "+254114511439";
 
       var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
 
@@ -72,4 +73,15 @@ createWhatsAppButtonListener("blue-bridge-crochet-top-btn", "Hello, I want to bu
 createWhatsAppButtonListener("fuzzy-purple-crochet-top-btn", "Hello, I want to buy the Fuzzy Purple crochet top");
 createWhatsAppButtonListener("checkered-mini-bag-btn", "Hello, I want to buy the Checkered mini bag");
 createWhatsAppButtonListener("grey-crochet-top-btn", "Hello, I want to buy the Grey crochet top");
-createWhatsAppButtonListener("green-brown-btn", "Hello, I want to buy the Green and Brown");
+createWhatsAppButtonListener("green-brown-btn", "Hello, I want to buy the Green-Brown skirt");
+createWhatsAppButtonListener("blue-bikini-btn", "Hello, I want to buy the blue bikini");
+createWhatsAppButtonListener("pw-bikini-btn", "Hello, I want to buy the pink white bikini ");
+
+createWhatsAppButtonListener( "red-bikini-btn" , "Hello, I want to buy the red bikini");
+
+createWhatsAppButtonListener("pink-divide×mesh-skirt-btn"  , "Hello, I want to buy the pink-divide×mesh-skirt" );
+createWhatsAppButtonListener( "peek-a-boob×mesh skirt-btn" , "Hello, I want to buy the peek a boob×mesh skirt");
+createWhatsAppButtonListener( "maren-btn" , "Hello, I want to buy the maren top ");
+createWhatsAppButtonListener("butterfly-btn"  , "Hello, I want to buy the  butterfly top");
+createWhatsAppButtonListener( "peek-btn" , "Hello, I want to buy the peek a boob top ");
+createWhatsAppButtonListener( "orange-maren-btn" , "Hello, I want to buy the orange maren top ");
