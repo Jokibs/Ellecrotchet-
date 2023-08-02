@@ -18,7 +18,7 @@ hr{border: 0;height: 3px;background-image: linear-gradient(to right, rgba(0, 0, 
 .nav-btn {background: black;border :0.0625rem solid black;}
 .elle {font-size: 2.25rem;font-family: cursive;text-transform:lowercase;
 font-weight: bold;}
-.hidden {opacity:0;}
+.hidden {opacity:0;pointer-events :none;}
            /* sidebar */
 .sidebar {width: 50%;background-color: rgba(200, 162, 200, 1);height: 100%;position: fixed;left: 0;top: 0;color: grey;text-align:center;
 transition :opacity 3s;}
@@ -28,6 +28,7 @@ transition :opacity 3s;}
 .sidebar a:hover {color: #21c0f5;}
 .sidebar .pt {padding-top: 2.5rem;color: red;}
 .sidebar button {margin-left:5px;}
+ .hidden ul{visibility:hidden;}
              /* space */
 .space {text-align:center;padding-top: 6.25rem;width: 100%;}
            /* images */
