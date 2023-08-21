@@ -12,7 +12,8 @@
  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta charset="UTF-8">
     <title>Ellecrochet || Home</title>
-    <link rel="stylesheet" href="elle.css">
+    <link rel="stylesheet" href="https:/www.crochet.co.ke/elle.css">
+    <base href="https:/www.crochet.co.ke/">
     <meta name="keywords" content="crochet kenya,Ellecrotchet,crochet tops,crochet skirts, crochet Bikini's">
  <meta name="description" content="We understand the importance of feeling good about yourself, and that's why our crochet designs are more than just accessories. Each piece is designed to boost your confidence and leave you feeling empowered."/>
  <meta name="robots" content="index, follow">
@@ -22,6 +23,59 @@
 <meta property="og:description" content="We understand the importance of feeling good about yourself, and that's why our crochet designs are more than just accessories. Each piece is designed to boost your confidence and leave you feeling empowered. ">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://www.crochet.co.ke/peek-a-boob-top-crochet.webp">
+<style>
+    .newsletter-subscription {
+
+padding: 20px;
+
+border-radius: 8px;
+
+margin: 20px;
+}
+
+.newsletter-subscription h2 {
+margin-bottom: 10px;
+}
+
+.newsletter-subscription p {
+color: #666;
+margin-bottom: 20px;
+}
+
+.subscribe-form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.subscribe-form label {
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.subscribe-form input[type="email"] {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ddd;
+border-radius: 4px;
+}
+
+.subscribe-form button {
+padding: 10px 20px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+background-color: #0056b3;
+}
+
+</style>
 <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -483,5 +537,14 @@
 </button></div>
    </footer> 
    <script src="elleb.js"></script>
- </body>
+   <section class="newsletter-subscription">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Stay up to date with our latest news and updates by subscribing to our newsletter.</p>
+    <form action="your-subscribe-endpoint" method="post" class="subscribe-form">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+</body>
 </html>
