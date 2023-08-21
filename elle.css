@@ -1,115 +1,559 @@
-*{margin: 0;padding: 0;}
-     /* header */
-body{width: 100%;line-height: 1.5;color:white;background-color: black;}
-body a{text-decoration:none;
-color: white;}
-h1{text-align:center;}
-header {max-width: 100%;min-height: 4.375rem; 
-border-bottom: pink 0.1875rem solid;position: fixed;z-index: 2;background:black;}
-            /* hr */
-hr{border: 0;height: 3px;background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(9, 84, 132), rgba(0, 0, 0, 0));margin-bottom :10px;}
-         /* hamburger */
-.hamburger {display: inline-block;cursor: pointer;padding: 0.1875rem 0.75rem;}
-.hamburger span {display: block;height: 0.25rem;width: 1.5625rem;margin-bottom: 0.25rem;position: relative;background: purple;z-index: 1;}
-.container {display: flex;align-items: center;}
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BE0SCYNL6P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-.mb-4 {margin-bottom: 0.25rem;}
+  gtag('config', 'G-BE0SCYNL6P');
+</script>
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Ellecrochet || Home</title>
+    <base href="https://www.crochet.co.ke/">
+    <link rel="stylesheet" href="elle.css">
 
-.nav-btn {background: black;border :0.0625rem solid black;}
-.elle {font-size: 2.25rem;font-family: cursive;text-transform:lowercase;
-font-weight: bold;}
-.hidden {opacity:0;pointer-events :none;}
-           /* sidebar */
-.sidebar {width: 50%;background-color: rgba(200, 162, 200, 1);height: 100%;position: fixed;left: 0;top: 0;color: grey;text-align:center;
-transition :opacity 3s;}
-.sidebar ul {list-style-type: none;padding: 0;margin: 0;}
-.sidebar li {padding: 0.625rem;text-align:left;}
-.sidebar li a {color: #333;text-decoration: none;}
-.sidebar a:hover {color: #21c0f5;}
-.sidebar .pt {padding-top: 2.5rem;color: red;}
-.sidebar button {margin-left:5px;}
- .hidden ul{visibility:hidden;}
-             /* space */
-.space {text-align:center;padding-top: 6.25rem;width: 100%;}
-           /* images */
-img{max-width: 90%;}
-img:hover {opacity: 0.3;}
-
-          /* showcase */
-.showcase {display: grid;grid-template-columns:1fr 1fr ;
-padding:1rem;}
-.image-container {position: relative;display: inline-block;perspective: 62.5rem;}
-.overlay {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.7);color: #fff;opacity: 0;transition: opacity 0.3s;display: flex;
-  justify-content: center;
-  align-items: center;}
-.image-container:hover .overlay {opacity: 1.0;}
-.hover-btn {display: none;}
-.image-container:hover .overlay .hover-btn {display: block;position: fixed;bottom: 0.4375rem;background-color: grey;padding: 0.3125rem 0.625rem;width: 5.625rem;border :0.0625rem solid white ;font-size :0.625rem ;}
-.image-container:hover img {transform: translateZ(-3.125rem);}
-.image-container:hover .title {display: none;}
-.title,h2 {font-weight: bold;padding: 0;margin: 0;}
-.more-btn {display: block;position: absolute;background: grey;width: 90%;color: white;font-weight: bold;padding: 0px 0.625rem;}
-.more {width: 6.25rem;height: 1.25rem;display: block;position: absolute;padding: 0.3125rem 0.625rem;width: 10rem;margin-left: 6.25rem;}
-.square {display: inline-block;width: 0.5rem;
-height: 0.5rem;margin-right: 0.3125rem;border: 0.125rem solid purple;}
-.leg {background: white;display: flex;align-items: center;
-justify-content: center;}
-.leg button {width:7.5rem;margin-right: 0.3125rem;background: white;border: none;}
-.offers {padding: 0.375rem 0.125rem;}
-.logo {width: 1.75rem;margin-right: 0.3125rem;
-background: white;border: none;}
-.logo-side {width: 1.75rem;margin-right: 0.3125rem;border: none;}
-.logo-side button {background: white;}
-.bra {width: 2.5rem;border: none;}
-
-.slideshow {Text-align:center;}
-.slideshow img {max-width:45%;border: 0.1875rem solid white;}
-
-footer {background-color: #f2f2f2;margin-top: auto;position: sticky;bottom: 0px;width: 100%;
-z-index: 2;}
-footer  a{color:black;}
-.product-single {text-align:center;position: relative;display: inline-block;}
-.back{display:flex;width: 50%;background: black;color :white ;font-weight :bold;font-size:0.625rem;text-align:left;padding:0.625rem;border:none;}
-.sizes{text-align:left;}
-.sizes ul{text-decoration :underline ;font-family :bold;}
-.sizes ul li{display:inline;list-style-type: none;padding: 0;margin: 0;}
-.info{text-align:left;}
-.no-style{list-style:none;}
-.bold{font-weight:bold;}
-.view-all{text-decoration :underline ;text-transform:uppercase ;background: black;color :white ;font-weight :bold;  font-size:0.625rem;text-align:left;padding:0.625rem;border:none;}
-.tick {display: inline-block;width: 1.25rem;
-height: 1.25rem;border: 0.125rem solid #000;
-border-radius: 50%;margin-right: 0.625rem;text-align: center;}
-.custom {width: 100%;}
-.sec-404{padding: 6.25rem 1.875rem;margin-left :0.625rem ;}
  
-#header {position: fixed;top: 0;left: 0;width: 100%;transition: top 0.3s;}
-.contact{background-color: white;color: black;
-padding: 0.3125rem 1.25rem;border: none;border-radius: 0.25rem;font-size: 1rem;cursor: pointer;}
-.custom h2,.custom h3,.custom h4,.custom h5,.custom h6{font-size:10px;background:grey;padding:0.8rem;text-align:center;}
-.blog-sec {padding:10px;
-border-bottom:3px solid white;}
-.blog-text{text-align:left;}
-.blog-text h1{ font-size:14px;text-align:left;
+    <meta name="keywords" content="crochet kenya,Ellecrotchet,crochet tops,crochet skirts, crochet Bikini's">
+ <meta name="description" content="We understand the importance of feeling good about yourself, and that's why our crochet designs are more than just accessories. Each piece is designed to boost your confidence and leave you feeling empowered."/>
+ <meta name="robots" content="index, follow">
+ <meta property="og:title" content="Ellecrochet || Home">
+<meta property="og:site_name" content="Ellecrochet">
+<meta property="og:url" content="https://www.crochet.co.ke/">
+<meta property="og:description" content="We understand the importance of feeling good about yourself, and that's why our crochet designs are more than just accessories. Each piece is designed to boost your confidence and leave you feeling empowered. ">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.crochet.co.ke/peek-a-boob-top-crochet.webp">
+<style>
+    .newsletter-subscription {
+
+padding: 20px;
+
+border-radius: 8px;
+
+margin: 20px;
 }
-.r3ad-mor3{background: grey;}
-.blog-section {padding:10px;}
-.image-container:hover .view-all{display:none;}
-main li {margin-left: 2rem;}
-@media screen and (min-width: 768px) {
-.showcase{
-    padding: 0;
-    margin:0 auto;
-    width: 50%;
-    grid-gap: 3px;
-    margin-bottom: 2.6rem;}
-.image-container {width: 100%;}
-img{ max-width:100%}
- .space {padding-top: 4.9rem;}
-     .slideshow {
-    padding: 0;
-    margin:0 auto;
-    width: 50%;
-    grid-gap: 3px;
-    margin-bottom: 2.2rem;}
+
+.newsletter-subscription h2 {
+margin-bottom: 10px;
 }
+
+.newsletter-subscription p {
+color: #666;
+margin-bottom: 20px;
+}
+
+.subscribe-form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.subscribe-form label {
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.subscribe-form input[type="email"] {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ddd;
+border-radius: 4px;
+}
+
+.subscribe-form button {
+padding: 10px 20px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+background-color: #0056b3;
+}
+
+</style>
+<script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Product",
+              "name": "Thalia Top crochet",
+              "description": " A brown crochet top ",
+              "brand": {
+                "@type": "Brand",
+                "name": "Ellecrotchet"
+              },
+              "url": "https://crochet.co.ke/thalia-top-crochet.html",
+              "image": "https://crochet.co.ke/thalia-top-crochet.jpg",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "priceCurrency": "KES",
+                "price": "1000",  
+                "seller": {
+                  "@type": "Organization",
+                  "name": "Ellecrotchet"
+                },
+                "shippingDetails": {
+                  "@type": "OfferShippingDetails",
+                  "shippingDestination": {
+                    "@type": "DefinedRegion",
+                    "addressCountry": "KE"
+                  },
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "KES"
+          },
+                  "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 0,
+                      "maxValue": 1,
+                      "unitCode": "DAY"
+                    },
+                    "transitTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 1,
+                      "maxValue": 5,
+                      "unitCode": "DAY"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Product",
+              "name": "maren top crochet",
+              "description": "A purple  crochet  top with a top brown border.",
+              "brand": {
+                "@type": "Brand",
+                "name": "Ellecrotchet"
+              },
+              "url": "https://crochet.co.ke/maren-top-crochet.html",
+              "image": "https://crochet.co.ke/maren-top-crochet.jpg",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "priceCurrency": "KES",
+                "price": "1000",
+                "seller": {
+                  "@type": "Organization",
+                  "name": "Ellecrotchet"
+                },
+                "shippingDetails": {
+                  "@type": "OfferShippingDetails",
+                  "shippingDestination": {
+                    "@type": "DefinedRegion",
+                    "addressCountry ": "KE"
+                  },
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "KES"
+          },
+                 
+                  "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 0,
+                      "maxValue": 1,
+                      "unitCode": "DAY"
+                    },
+                    "transitTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 1,
+                      "maxValue": 5,
+                      "unitCode": "DAY"
+                    }
+                  }
+                }
+              }
+            }
+          },  {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Product",
+              "name": " Orange maren top crochet",
+              "description": "An orange crochet  and has 5 crochet hearts",
+              "brand": {
+                "@type": "Brand",
+                "name": "Ellecrotchet"
+              },
+              "url": "https://crochet.co.ke/orange-maren-top-crochet.html",
+              "image": "https://crochet.co.ke/orange-maren-top-crochet.jpg",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "priceCurrency": "KES",
+                "price": "1000",
+                "seller": {
+                  "@type": "Organization",
+                  "name": "Ellecrotchet"
+                },
+                "shippingDetails": {
+                  "@type": "OfferShippingDetails",
+                  "shippingDestination": {
+                    "@type": "DefinedRegion",
+                    "addressCountry ": "KE"
+                  },
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "KES"
+          },
+                 
+                  "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 0,
+                      "maxValue": 1,
+                      "unitCode": "DAY"
+                    },
+                    "transitTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 1,
+                      "maxValue": 5,
+                      "unitCode": "DAY"
+                    }
+                  }
+                }
+              }
+            }
+          },  {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "Product",
+              "name": "Peek a boob top crochet",
+              "description": "An  orange crochet  top",
+              "brand": {
+                "@type": "Brand",
+                "name": "Ellecrotchet"
+              },
+              "url": "https://crochet.co.ke/peek-a-boob-top-crochet.html",
+              "image": "https://crochet.co.ke/peek-a-boob-top-crochet.webp",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "priceCurrency": "KES",
+                "price": "1000",
+                "seller": {
+                  "@type": "Organization",
+                  "name": "Ellecrotchet"
+                },
+                "shippingDetails": {
+                  "@type": "OfferShippingDetails",
+                  "shippingDestination": {
+                    "@type": "DefinedRegion",
+                    "addressCountry ": "KE"
+                  },
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "KES"
+          },
+                 
+                  "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 0,
+                      "maxValue": 1,
+                      "unitCode": "DAY"
+                    },
+                    "transitTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 1,
+                      "maxValue": 5,
+                      "unitCode": "DAY"
+                    }
+                  }
+                }
+              }
+            }
+          },  {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "Product",
+              "name": "Pink divide top crochet",
+              "description": "A pink and red  crochet  top.",
+              "brand": {
+                "@type": "Brand",
+                "name": "Ellecrotchet"
+              },
+              "url": "https://crochet.co.ke/pink-divide-top-crochet.html",
+              "image": "https://crochet.co.ke/pink-divide-top-crochet.jpg",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "priceCurrency": "KES",
+                "price": "1000",
+                "seller": {
+                  "@type": "Organization",
+                  "name": "Ellecrotchet"
+                },
+                "shippingDetails": {
+                  "@type": "OfferShippingDetails",
+                  "shippingDestination": {
+                    "@type": "DefinedRegion",
+                    "addressCountry ": "KE"
+                  },
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "KES"
+          },
+                 
+                  "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 0,
+                      "maxValue": 1,
+                      "unitCode": "DAY"
+                    },
+                    "transitTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 1,
+                      "maxValue": 5,
+                      "unitCode": "DAY"
+                    }
+                  }
+                }
+              }
+            }
+          },  {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "Product",
+              "name": "Butterfly  top crochet",
+              "description": "A purple and white  crochet  top that looks like a butterfly. ",
+              "brand": {
+                "@type": "Brand",
+                "name": "Ellecrotchet"
+              },
+              "url": "https://crochet.co.ke/butterfly-top-crochet.html",
+              "image": "https://crochet.co.ke/butterfly-top-crochet.webp",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "priceCurrency": "KES",
+                "price": "1000",
+                "seller": {
+                  "@type": "Organization",
+                  "name": "Ellecrotchet"
+                },
+                "shippingDetails": {
+                  "@type": "OfferShippingDetails",
+                  "shippingDestination": {
+                    "@type": "DefinedRegion",
+                    "addressCountry ": "KE"
+                  },
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": 0,
+            "currency": "KES"
+          },
+                 
+                  "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 0,
+                      "maxValue": 1,
+                      "unitCode": "DAY"
+                    },
+                    "transitTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": 1,
+                      "maxValue": 5,
+                      "unitCode": "DAY"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    </script>
+ <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png"> 
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png"> 
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png"> 
+  <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png"> 
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-96x96.png">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body> <script src="elle.js"></script>
+  <header id="header"> 
+  <div class="container">
+  <button id="toggle-button"class="nav-btn"><div class="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</button><a href="index.html"><span class="elle">ELLECROCHET</span></a>
+<div> <button ><a href="https://wa.me/254110448686?text=I'm%20interested%20in%20your%20bralettes%20for%20sale."><img class="logo-side" src="whatsapp-logo.png" alt="WhatsApp logo"></a></button>
+  <button ><a href="https://pin.it/3dRXw6f"><img class="logo-side" src="Pinterest-logo.png" alt="pintrest logo"></a></button>
+    <button ><a href="https://instagram.com/ellecrochet._?igshid=NTc4MTIwNjQ2YQ=="><img class="logo-side" src="insta-logo.png" alt="Instagram logo"></a></button>
+<button ><a href="https://www.tiktok.com/@ellecrochet._"><img class="logo-side" src="tiktok-logo.png" alt="tiktok logo"></a></button>
+    </div>
+
+    </div>
+  <nav class="sidebar toggle-element hidden">
+      <ul>
+   <li class="pt"><a href="index.html">Home</a></li>
+   <li><a href="tops-crochet.html">Tops</a></li>
+  <li><a href="bikini-crochet.html">Bikini's</a></li>
+        <li><a href="skirts-crochet.html">Skirts</a></li>        
+        <li><a href="tote-bag-crochet.html">Tote Bags</a></li>
+        <li><a href="crochet-blogs.html">Blogs</a></li>
+        <li><a href="about.html">About</a></li> 
+        <button ><a href="https://wa.me/254110448686?text=I'm%20interested%20in%20your%20bralettes%20for%20sale."><img class="logo-side" src="whatsapp-logo.png" alt="WhatsApp logo"></a></button>
+          <button ><a href="https://pin.it/3dRXw6f"><img class="logo-side" src="Pinterest-logo.png" alt="pintrest logo"></a></button>
+            <button ><a href="https://instagram.com/ellecrochet._?igshid=NTc4MTIwNjQ2YQ=="><img class="logo-side" src="insta-logo.png" alt="Instagram logo"></a></button>
+      <button ><a href="https://www.tiktok.com/@ellecrochet._"><img class="logo-side" src="tiktok-logo.png" alt="tiktok logo"></a></button>
+        </ul>    
+    </nav>
+  </header> 
+  <main class="space"> 
+     <hr>
+      <h1>Tops</h1>
+      <hr>
+        <section class="showcase ">
+<div class="image-container"><img src="orange-maren-top-crochet.jpg" alt="orange maren top crochet"><br><div class="title"><sub> Orange Maren </sub>     <sub >1000 ksh</sub></div> <div class="overlay">
+    <p>Orange Maren</p>
+    <button class="hover-btn" ><a href="orange-maren-top-crochet.html">Buy Now!</a></button>  </div></div>
+    
+     
+          <div class="image-container"><img src="peek-a-boob-top-crochet.webp" alt="peek a boob top crochet"><br><div class="title"><sub>Peek- A -Boob</sub>     <sub >1000 ksh</sub></div> <div class="overlay">
+    <p>Peek- A -Boob</p>
+    <button class="hover-btn" ><a href="peek-a-boob-top-crochet.html">Buy Now!</a></button>  </div></div></section>
+    
+       <section class="slideshow">
+                 <div class="image-container"><img src="thalia-top-crochet.jpg" alt="Thalia top  crochet "><br><div class="title"><sub>Thalia Top</sub>  <sub >1000 ksh</sub></div>
+    <div class="overlay">
+    <p>THALIA TOP</p>
+ <button class="hover-btn" ><a href="thalia-top-crochet.html">Buy Now!</a></button>  </div></div>
+ </section>
+ <section class="showcase">
+        <div class="image-container">
+  <img class="image"src="pink-divide-top-crochet.jpg" alt="pink divide top crochet"><br><div class="title"><sub>PINk Divide</sub>     <sub >1000 ksh</sub></div>
+  <div class="overlay">
+    <p>Pink Divide</p>
+    <button class="hover-btn" ><a href="pink-divide-top-crochet.html">Buy Now!</a></button>  </div></div>
+
+    <div class="image-container">
+  <img class="image"src="butterfly-top-crochet.webp" alt="Butterfly Top crochet"><br><div class="title"><sub>Butterfly Top</sub>     <sub >1000 ksh</sub></div>
+  <div class="overlay">
+    <p>Butterfly Top</p>
+    <button class="hover-btn" ><a href="butterfly-top-crochet.html">Buy Now!</a></button>  </div></div><br>
+</section>
+<section class="slideshow">
+   <div class="image-container"><img src="maren-top-crochet.jpg" alt="maren top crochet"><br><div class="title"><sub>Maren top</sub>     <sub >1000 ksh</sub></div> <div class="overlay">
+    <p>Maren TOP</p>
+    <button class="hover-btn" ><a href="maren-top-crochet.html">Buy Now!</a></button>  </div></div>
+   </section>
+   <section class="slideshow">
+    <div class="image-container">
+      <hr>
+       <h2 id="tops">TOPS</h2>
+       <hr><br>
+    <div><img name="slide" alt="pictures of brallets"><br><button class="view-all">View all</button><div class="overlay">
+    
+    <button class="hover-btn" ><a href="tops-crochet.html">View all Tops</a></button>  </div></div></div>
+   </section> 
+   <section class="slideshow">
+       <div class="image-container">
+        <hr>
+        <h2 id="sets"> Bikini sets</h2>
+            <hr>
+         <br>
+<div><img name="two" alt="bikini pictures"><br><button class="view-all">View all</button><div class="overlay">
+    
+    <button class="hover-btn" ><a href="bikini-crochet.html">View all Bikini's</a></button>  </div>
+</div><div>
+   </section> 
+   <section class="slideshow" >
+       <div class="image-container">
+       <hr>
+         <h2 id="tote">Tote bag</h2>
+         <hr><br>
+         <div>
+         <img src="pink-tote-bag.jpg" alt="tote bag"><br><button class="view-all">View all</button><div class="overlay">
+    
+    <button class="hover-btn" ><a href="tote-bag-crochet.html">All tote bags</a></button></div></div></div></section>
+   <section class="slideshow"> 
+      <div class="image-container">
+        <hr>            
+        <h2 id="skirts">Skirts</h2>
+         <hr>
+        <br>
+ <div>
+ <img src="pic12.jpg" alt="skirt"><br><button class="view-all">View all</button><div class="overlay">
+<button class="hover-btn" ><a href="skirts-crochet.html">View all skirts</a></button>  </div></div></div></section>
+   </main> 
+    <section class="custom">
+       <h3> We make custom designs and we encourage  you to send specific  measurements to ensure  the pieces fit.</h3></section>
+       <section class="newsletter-subscription">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Stay up to date with our latest news and updates by subscribing to our newsletter.</p>
+    <form action="your-subscribe-endpoint" method="post" class="subscribe-form">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+    <footer>
+ <div class="leg">
+<button id="toggle-button2"><div class="hamburger">
+  <span></span>
+  <span></span>
+  <span ></span>
+</div><p>MENU</p></button>
+
+<button class="offers"><a href="#">
+<span class="square"></span>
+<span class="square"></span>
+<br>
+<span class="square"></span>
+<span class="square"></span>
+<p class="sqr">OFFERS</p></a>
+</button>
+
+<button><a href="https://wa.me/254110448686?text=I'm%20interested%20in%20yoour%20crochet%20items"><img class="logo" src="whatsapp-logo.png" alt="WhatsApp logo"></a><p class="sqr">CHAT</p></button>
+<button ><a href="index.html">
+    <img class="bra" src="bra-logo.png" alt="ellecrochet products icon"><p class="sqr">PRODUCTS</p></a>
+</button></div>
+   </footer> 
+   <script src="elleb.js"></script>
+   
+</body>
+</html>
