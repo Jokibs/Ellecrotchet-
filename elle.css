@@ -96,3 +96,14 @@ border-bottom:3px solid white;}
 .blog-section {padding:10px;}
 .image-container:hover .view-all{display:none;}
 main li {margin-left: 2rem;}
+@media screen and (min-width: 768px) {
+.showcase{
+    padding: 0;
+    margin:0 auto;
+    width: 50%;
+    grid-gap: 3px;
+    margin-bottom: 2.2rem;}
+.image-container {width: 100%;}
+img{ max-width:100%}
+ .space {padding-top: 4.9rem;}
+}
