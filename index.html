@@ -420,7 +420,7 @@ background-color: #0056b3;
   <span></span>
 </div>
 </button><a href="index.html"><span class="elle">ELLECROCHET</span></a>
-<div class="h-buttons"> <button ><a href="https://wa.me/254110448686?text=I'm%20interested%20in%20your%20bralettes%20for%20sale."><img class="logo-side" src="whatsapp-logo.png" alt="WhatsApp logo"></a></button>
+<div class=" h-buttons"> <button ><a href="https://wa.me/254110448686?text=I'm%20interested%20in%20your%20bralettes%20for%20sale."><img class="logo-side" src="whatsapp-logo.png" alt="WhatsApp logo"></a></button>
   <button ><a href="https://pin.it/3dRXw6f"><img class="logo-side" src="Pinterest-logo.png" alt="pintrest logo"></a></button>
     <button ><a href="https://instagram.com/ellecrochet._?igshid=NTc4MTIwNjQ2YQ=="><img class="logo-side" src="insta-logo.png" alt="Instagram logo"></a></button>
 <button ><a href="https://www.tiktok.com/@ellecrochet._"><img class="logo-side" src="tiktok-logo.png" alt="tiktok logo"></a></button>
@@ -525,9 +525,9 @@ background-color: #0056b3;
        <section class="newsletter-subscription">
     <h2>Subscribe to Our Newsletter</h2>
     <p>Stay up to date with our latest news and updates by subscribing to our newsletter.</p>
-    <form action="your-subscribe-endpoint" method="post" class="subscribe-form">
+    <form name="submit-to-google-sheet" method="post"class="subscribe-form">
       <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <input type="email" id="email" name="Email" placeholder="Enter your email" required>
       <button type="submit">Subscribe</button>
     </form>
   </section>
@@ -554,6 +554,22 @@ background-color: #0056b3;
 </button></div>
    </footer> 
    <script src="elleb.js"></script>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxCfL-uk7bTBIXQTAtP7ekwr43q2xJ37O50ZzOQ1oK94EEsnGHw8m0XoK_iMIifArv0/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          form.reset()
+          alert('Thank You for subscribing' )
+         
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
    
 </body>
 </html>
