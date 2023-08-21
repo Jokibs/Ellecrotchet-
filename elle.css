@@ -16,6 +16,10 @@ hr{border: 0;height: 3px;background-image: linear-gradient(to right, rgba(0, 0, 
 .mb-4 {margin-bottom: 0.25rem;}
 
 .nav-btn {background: black;border :0.0625rem solid black;}
+.h-buttons{display:none;
+     
+}
+
 .elle {font-size: 2.25rem;font-family: cursive;text-transform:lowercase;
 font-weight: bold;}
 .hidden {opacity:0;pointer-events :none;}
@@ -112,4 +116,15 @@ img{ max-width:100%}
     width: 50%;
     grid-gap: 3px;
     margin-bottom: 2.2rem;}
+     
+     .h-buttons{display:block;
+position: absolute;
+    right: 0;
+background:black;}
+     
+     
+.h-buttons button{
+     background:black;
+}
+
 }
