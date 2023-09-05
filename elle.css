@@ -130,5 +130,7 @@ background:black;}
 .h-buttons button{
      background:black;
 }
-
+.product-single .image-container{
+     width:50%;
+}
 }
