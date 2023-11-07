@@ -1,6 +1,6 @@
 *{margin: 0;padding: 0;}
      /* header */
-body{width: 100%;line-height: 1.5;color:white;background-color: black;}
+body{width: 100%;line-height: 1.5;color:white;background-color: black;text-decoration:capitalize;}
 body a{text-decoration:none;
 color: white;}
 h1{text-align:center;}
