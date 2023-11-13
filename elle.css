@@ -15,7 +15,7 @@ hr{border: 0;height: 3px;background-image: linear-gradient(to right, rgba(0, 0, 
 .elle {font-size: 2.25rem;font-family: cursive;text-transform:lowercase;font-weight: bold;}
 .hidden {opacity:0;pointer-events :none;}
            /* sidebar */
-.sidebar {width: 50%;background-color: #bf99ff;height: 100%;position: fixed;left: 0;top: 0;color: grey;text-align:center;transition :opacity 3s;}
+.sidebar {background-color: #bf99ff;height: 100%;position: fixed;left: 0;top: 0;color: grey;text-align:center;transition :opacity 3s;}
 .sidebar ul {list-style-type: none;padding: 0;margin: 0;}
 .sidebar li {padding: 0.625rem;text-align:left;}
 .sidebar li a {color: #333;text-decoration: none;}
@@ -47,9 +47,6 @@ img:hover {opacity: 0.3;}
 #footer .logo{background:unset;}
 #footer .leg{background:#bf99ff;}
 #footer .leg button{background:#bf99ff;}
-
-
-
 .leg {background: white;display: flex;align-items: center;justify-content: center;}
 .leg .hamburger span {background:purple;}
 .leg button {width:7.5rem;margin-right: 0.3125rem;background: white;border: none;}
@@ -98,4 +95,4 @@ img{ max-width:100%}
 .sidebar{width:110px;}
 .imagecontainer img{width:50%;}
 .blog-sec img{width:300px;}
-.blog-section img{width:300px;}
+.blog-section img{width:300px;}}
