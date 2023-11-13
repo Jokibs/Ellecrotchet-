@@ -42,8 +42,12 @@ img:hover {opacity: 0.3;}
 .more {width: 6.25rem;height: 1.25rem;display: block;position: absolute;padding: 0.3125rem 0.625rem;width: 10rem;margin-left: 6.25rem;}
 .square {display: inline-block;width: 0.5rem;height: 0.5rem;margin-right: 0.3125rem;border: 0.125rem solid purple;}
 #footer .square{border: 0.125rem solid black;}
-.leg {background: #bf99ff;display: flex;align-items: center;justify-content: center;}
-.leg button {width:7.5rem;margin-right: 0.3125rem;background: #bf99ff;border: none;}
+#footer .logo{background:unset;}
+#footer .leg{background:#bf99ff;}
+#footer .leg button{background:#bf99ff;}
+
+.leg {background: white;display: flex;align-items: center;justify-content: center;}
+.leg button {width:7.5rem;margin-right: 0.3125rem;background: white;border: none;}
 .offers {padding: 0.375rem 0.125rem;}
 .logo {width: 1.75rem;margin-right: 0.3125rem;background: white;border: none;}
 .logo-side {width: 1.75rem;margin-right: 0.3125rem;border: none;}
