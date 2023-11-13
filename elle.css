@@ -46,7 +46,10 @@ img:hover {opacity: 0.3;}
 #footer .leg{background:#bf99ff;}
 #footer .leg button{background:#bf99ff;}
 
+
+
 .leg {background: white;display: flex;align-items: center;justify-content: center;}
+.leg .hamburger span {background:purple;}
 .leg button {width:7.5rem;margin-right: 0.3125rem;background: white;border: none;}
 .offers {padding: 0.375rem 0.125rem;}
 .logo {width: 1.75rem;margin-right: 0.3125rem;background: white;border: none;}
