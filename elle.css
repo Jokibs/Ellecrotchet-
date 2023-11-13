@@ -37,7 +37,7 @@ img:hover {opacity: 0.3;}
 .image-container:hover .overlay .hover-btn {display: block;position: fixed;bottom: 0.4375rem;background-color: grey;padding: 0.3125rem 0.625rem;width: 5.625rem;border :0.0625rem solid white ;font-size :0.625rem ;}
 .image-container:hover img {transform: translateZ(-3.125rem);}
 .image-container:hover .title {display: none;}
-.hats{display: grid;grid-template-columns:1fr 1fr;padding:unset;}
+.hats{display: grid;grid-template-columns:1fr 1fr 1fr 1fr;padding:unset;}
 .hats img{height:75%;}
 .title,h2 {font-weight: bold;padding: 0;margin: 0;}
 .more-btn {display: block;position: absolute;background: grey;width: 90%;color: white;font-weight: bold;padding: 0px 0.625rem;}
