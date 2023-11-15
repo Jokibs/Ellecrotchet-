@@ -105,10 +105,9 @@
     var email=form.elements['email'].value;
 
 if (email !== "" && emailRegex.test(email)) {
-  alert('Thank You for subscribing');
+ const purpleHeart = '\u{1F49C}';const message = 'Thank you  for subscribing' + purpleHeart;alert(message);
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-     
         form.reset()
       })
       .catch(error => console.error('Error!', error.message))
