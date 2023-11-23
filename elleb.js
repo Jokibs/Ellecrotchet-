@@ -18,13 +18,13 @@ toggleButton2.addEventListener('click', function() {
 });
 // Get the button element
     var button = document.getElementById('redirect-btn');
-
+if(button){
     // Add a click event listener to the button
     button.addEventListener('click', function() {
       // Redirect to index.html
       window.location.href = 'index.html';
     });
-    
+};
 // Store the text in a JavaScript variable
     var myText = ":+254 110448686";
 
