@@ -9,10 +9,10 @@ toggleButton.addEventListener('click', function() {
     
   });
    
-   if (home.innerHTML === '<i class="material-icons">menu</i>') {
-     home.innerHTML = '<i class="material-icons">menu_open</i>';
+   if (home[0].innerHTML === '<i class="material-icons">menu</i>') {
+       home[0].innerHTML = '<i class="material-icons">menu_open</i>';
     } else {
-     home.innerHTML = '<i class="material-icons">menu</i>';
+     home[0].innerHTML = '<i class="material-icons">menu</i>';
     }
 });
 
@@ -21,10 +21,10 @@ toggleButton2.addEventListener('click', function() {
   toggleElements.forEach(element => {
     element.classList.toggle('hidden');
   });
-   if (home.innerHTML === '<i class="material-icons">menu</i>') {
-     home.innerHTML = '<i class="material-icons">menu_open</i>';
+   if (home[1].innerHTML === '<i class="material-icons">menu</i>') {
+     home[1].innerHTML = '<i class="material-icons">menu_open</i>';
     } else {
-     home.innerHTML = '<i class="material-icons">menu</i>';
+     home[1].innerHTML = '<i class="material-icons">menu</i>';
     }
 });
 // Get the button element
