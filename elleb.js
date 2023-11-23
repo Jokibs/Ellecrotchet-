@@ -28,11 +28,14 @@ if(button){
 // Store the text in a JavaScript variable
     var myText = ":+254 110448686";
 
+
     // Get the element to display the text
     var displayElement = document.getElementById('displayText');
-
+if (displayElement) {
+   displayElement.textContent = myText;
+}
     // Set the text in the display element
-    displayElement.textContent = myText;
+   
     
 function createWhatsAppButtonListener(buttonId, message) {
   var button = document.getElementById(buttonId);
