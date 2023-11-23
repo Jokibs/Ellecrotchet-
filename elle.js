@@ -1,5 +1,3 @@
-var changehome=document.getElementsByClassName("hamburger");changehome[1].innerHTML='<i class="material-icons">menu</i>';changehome[0].innerHTML='<i class="material-icons">menu</i>';changehome[0].style.color="white";changehome[0].style.fontSize="40px";
-
 
 
 var i1 = 0;
@@ -31,8 +29,12 @@ function changeimg2() {
 }
  
 window.onload = function() {
-    changeimg1();
-    changeimg2();
+    
+    
+    var changehome=document.getElementsByClassName("hamburger");changehome[1].innerHTML='<i class="material-icons">menu</i>';changehome[0].innerHTML='<i class="material-icons">menu</i>';changehome[0].style.color="white";changehome[0].style.fontSize="40px";
+
+changeimg1();
+changeimg2();
 };
 
 //header scroll
