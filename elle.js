@@ -1,3 +1,7 @@
+var changehome=document.getElementsByClassName("hamburger");changehome[1].innerHTML="<i class="material-icons">menu</i>";changehome[0].innerHTML='<i class="material-icons">menu</i>';changehome[0].style.color="white";changehome[0].style.fontSize="40px";
+
+
+
 var i1 = 0;
 var images1 = ['purple-pom-pom-crochet-top.jpg','brown-divide-crochet-top.jpg', 'thalia-top-crochet.jpg', 'purple-half-pom-pom-crochet-top.jpg','peek-a-boob-top-crochet.webp', 'butterfly-top-crochet.webp','yellow-crochet-top.jpg','maren-top-crochet.jpg','orange-maren-top-crochet.jpg','pink-divide-top-crochet.jpg'];
 var time1 = 2000;
