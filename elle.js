@@ -12,6 +12,20 @@ function changeimg1() {
     setTimeout(changeimg1, time1);
 }
 
+var i1 = 0;
+var images1 = ['purple-pom-pom-crochet-top.jpg','brown-divide-crochet-top.jpg', 'thalia-top-crochet.jpg', 'purple-half-pom-pom-crochet-top.jpg','peek-a-boob-top-crochet.webp', 'butterfly-top-crochet.webp','yellow-crochet-top.jpg','maren-top-crochet.jpg','orange-maren-top-crochet.jpg','pink-divide-top-crochet.jpg'];
+var time1 = 2000;
+
+function changeimg1() {
+    document.slide.src = images1[i1];
+    if (i1 < images1.length - 1) {
+        i1++;
+    } else {
+        i1 = 0;
+    }
+    setTimeout(changeimg1, time1);
+}
+
   var i2 = 0;
 var images2 = ['red-bikini-set.jpg', 'pink-white-bikini-set.jpg', 'blue-bikini-set.jpg'];
 var time2 = 4000;
@@ -26,10 +40,13 @@ function changeimg2() {
     setTimeout(changeimg2, time2);
 }
 
- 
-window.onload = function() {var changehome=document.getElementsByClassName("hamburger");changehome[1].innerHTML='<i class="material-icons">menu</i>';changehome[0].innerHTML='<i class="material-icons">menu</i>';changehome[0].style.color="white";changehome[0].style.fontSize="40px";
+window.onload = function() {
 
-changeimg2();changeimg1();
+
+    var changehome=document.getElementsByClassName("hamburger");changehome[1].innerHTML='<i class="material-icons">menu</i>';changehome[0].innerHTML='<i class="material-icons">menu</i>';changehome[0].style.color="white";changehome[0].style.fontSize="40px";
+
+changeimg1();
+changeimg2();
 };
 
 //header scroll
