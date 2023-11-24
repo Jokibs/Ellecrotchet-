@@ -1,10 +1,6 @@
-function changeImage(container, images, time){let i = 0;function updateImage(){
- document.container.src= images1[i];
- i = (i < images.length - 1) ? i + 1 : 0;
- setTimeout(updateImage, time);
-    }
+function changeImage(container, images, time){let i = 0;  var actual =document.container;  console.log(actual);function updateImage(){ console.log(actual); console.log(actual.src);actual.src= images1[i];i = (i < images.length - 1) ? i + 1 : 0;}
 
-    updateImage();
+    setTimeout(updateImage, time);
 }
 
 // Images for the first slideshow
@@ -19,6 +15,7 @@ const time2 = 4000;
 
  
 window.onload = function() {var changehome=document.getElementsByClassName("hamburger");changehome[1].innerHTML='<i class="material-icons">menu</i>';changehome[0].innerHTML='<i class="material-icons">menu</i>';changehome[0].style.color="white";changehome[0].style.fontSize="40px";
+
 changeImage('slide', images1, time1);
 changeImage('two', images2, time2);
 };
