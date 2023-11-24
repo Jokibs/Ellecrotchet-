@@ -1,19 +1,7 @@
-
-function changeImage(container, images, time) {
-      let i = 0;
-console.log(images);
-    function updateImage() {
-        console.log(container);
-        console.log(time);
-        console.log(images);
-          console.log(images[0]);
-          console.log(images[1]);
-        console.log(i);
-const tag=document.container;
-        tag.src= images[i];
-        console.log(tag);
-        i = (i < images.length - 1) ? i + 1 : 0;
-        setTimeout(updateImage, time);
+function changeImage(container, images, time){let i = 0;function updateImage(){
+ document.container.src= images1[i];
+ i = (i < images.length - 1) ? i + 1 : 0;
+ setTimeout(updateImage, time);
     }
 
     updateImage();
