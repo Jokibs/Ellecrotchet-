@@ -2,6 +2,8 @@
 function changeImage(container, images, time) {
 
     function updateImage() {
+        console.log(container);
+        console.log(time);
         document.container.src = images[i];
         i = (i < images.length - 1) ? i + 1 : 0;
         setTimeout(updateImage, time);
