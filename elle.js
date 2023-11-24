@@ -4,7 +4,7 @@
     const container = document.getElementById(containerId);
 
     function updateImage() {
-        container.src = images[i];
+        document.container.src = images[i];
         i = (i < images.length - 1) ? i + 1 : 0;
         setTimeout(updateImage, time);
     }
