@@ -1,6 +1,6 @@
     let i = 0;
 function changeImage(container, images, time) {
-
+console.log(images);
     function updateImage() {
         console.log(container);
         console.log(time);
