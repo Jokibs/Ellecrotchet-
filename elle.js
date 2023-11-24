@@ -6,6 +6,8 @@ console.log(images);
         console.log(container);
         console.log(time);
         console.log(images);
+          console.log(images[0]);
+          console.log(images[1]);
         console.log(i);
 const tag=document.container;
         tag.src= images[i];
