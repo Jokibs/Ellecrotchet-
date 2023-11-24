@@ -1,6 +1,6 @@
-
-function changeImage(container, images, time) {
     let i = 0;
+function changeImage(container, images, time) {
+
     function updateImage() {
         document.container.src = images[i];
         i = (i < images.length - 1) ? i + 1 : 0;
