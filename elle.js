@@ -1,5 +1,5 @@
 
-function changeImage(containerId, images, time) {
+function changeImage(container, images, time) {
     let i = 0;
     function updateImage() {
         document.container.src = images[i];
