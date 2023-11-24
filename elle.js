@@ -1,5 +1,6 @@
-function changeImage(containerId, images, time) {
-    let i = 0;
+
+ let i = 0;function changeImage(containerId, images, time) {
+   
     const container = document.getElementById(containerId);
 
     function updateImage() {
