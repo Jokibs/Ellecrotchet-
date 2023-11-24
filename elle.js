@@ -1,4 +1,4 @@
-function changeImage(container, images, time){let i = 0;  var actual =document.container;  console.log(actual);function updateImage(){ console.log(actual);  console.log(imaes[i]);console.log(actual.src);actual.src= images1[i];i = (i < images.length - 1) ? i + 1 : 0;}
+function changeImage(container, images, time){let i = 0;  var actual =document.container;  console.log(actual);function updateImage(){ console.log(actual);  console.log(images[i]);console.log(actual.src);actual.src= images1[i];i = (i < images.length - 1) ? i + 1 : 0;}
 
     setTimeout(updateImage, time);
 }
