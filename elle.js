@@ -1,23 +1,35 @@
-function changeImage(container, images, time){let i = 0;  var actual =document.container;  console.log(actual);function updateImage(){ console.log(actual);  console.log(images[i]);console.log(actual.src);actual.src= images1[i];i = (i < images.length - 1) ? i + 1 : 0;}
+var i1 = 0;
+var images1 = ['purple-pom-pom-crochet-top.jpg','brown-divide-crochet-top.jpg', 'thalia-top-crochet.jpg', 'purple-half-pom-pom-crochet-top.jpg','peek-a-boob-top-crochet.webp', 'butterfly-top-crochet.webp','yellow-crochet-top.jpg','maren-top-crochet.jpg','orange-maren-top-crochet.jpg','pink-divide-top-crochet.jpg'];
+var time1 = 2000;
 
-    setTimeout(updateImage, time);
+function changeimg1() {
+    document.slide.src = images1[i1];
+    if (i1 < images1.length - 1) {
+        i1++;
+    } else {
+        i1 = 0;
+    }
+    setTimeout(changeimg1, time1);
 }
 
-// Images for the first slideshow
-const images1 = ['purple-pom-pom-crochet-top.jpg', 'brown-divide-crochet-top.jpg', 'thalia-top-crochet.jpg', 'purple-half-pom-pom-crochet-top.jpg', 'peek-a-boob-top-crochet.webp', 'butterfly-top-crochet.webp', 'yellow-crochet-top.jpg', 'maren-top-crochet.jpg', 'orange-maren-top-crochet.jpg', 'pink-divide-top-crochet.jpg'];
-const time1 = 2000;
+  var i2 = 0;
+var images2 = ['red-bikini-set.jpg', 'pink-white-bikini-set.jpg', 'blue-bikini-set.jpg'];
+var time2 = 4000;
 
-
-// Images for the second slideshow
-const images2 = ['red-bikini-set.jpg', 'pink-white-bikini-set.jpg', 'blue-bikini-set.jpg'];
-const time2 = 4000;
-
+function changeimg2() {
+    document.two.src = images2[i2];
+    if (i2 < images2.length - 1) {
+        i2++;
+    } else {
+        i2 = 0;
+    }
+    setTimeout(changeimg2, time2);
+}
 
  
 window.onload = function() {var changehome=document.getElementsByClassName("hamburger");changehome[1].innerHTML='<i class="material-icons">menu</i>';changehome[0].innerHTML='<i class="material-icons">menu</i>';changehome[0].style.color="white";changehome[0].style.fontSize="40px";
 
-changeImage('slide', images1, time1);
-changeImage('two', images2, time2);
+changeimg2();changeimg1();
 };
 
 //header scroll
