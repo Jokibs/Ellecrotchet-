@@ -1,16 +1,4 @@
-function togglehomeicon(){
- if (home[0].innerHTML === '<i class="material-icons">menu</i>') {
-       home[0].innerHTML = '<i class="material-icons">menu_open</i>';
-    } else {
-     home[0].innerHTML = '<i class="material-icons">menu</i>';
-    }
-   if (home[1].innerHTML === '<i class="material-icons">menu</i>') {
-     home[1].innerHTML = '<i class="material-icons">menu_open</i>';
-    } else {
-     home[1].innerHTML = '<i class="material-icons">menu</i>';
-    }
-  
-}
+function togglehomeicon(){if(home[0].innerHTML === '<i class="material-icons">menu</i>'){home[0].innerHTML = '<i class="material-icons">menu_open</i>';}else{home[0].innerHTML = '<i class="material-icons">menu</i>';}if(home[1].innerHTML === '<i class="material-icons">menu</i>'){home[1].innerHTML = '<i class="material-icons">menu_open</i>';}else {home[1].innerHTML = '<i class="material-icons">menu</i>';}}
   
 const toggleButton = document.getElementById('toggle-button');
 const toggleButton2 = document.getElementById('toggle-button2');
@@ -40,7 +28,7 @@ if(button){
     // Add a click event listener to the button
     button.addEventListener('click', function() {
       // Redirect to index.html
-      window.location.href = 'index.html';
+      window.location.href = 'https://www.crochet.co.ke/';
     });
 };
 // Store the text in a JavaScript variable
