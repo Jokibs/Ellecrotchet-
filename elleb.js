@@ -31,6 +31,7 @@ toggleButton2.addEventListener('click', function() {
   toggleElements.forEach(element => {
     element.classList.toggle('hidden');
   });
+ togglehomeicon();
 
 });
 // Get the button element
