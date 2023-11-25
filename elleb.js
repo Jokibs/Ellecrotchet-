@@ -1,3 +1,17 @@
+function togglehomeicon(){
+ if (home[0].innerHTML === '<i class="material-icons">menu</i>') {
+       home[0].innerHTML = '<i class="material-icons">menu_open</i>';
+    } else {
+     home[0].innerHTML = '<i class="material-icons">menu</i>';
+    }
+   if (home[1].innerHTML === '<i class="material-icons">menu</i>') {
+     home[1].innerHTML = '<i class="material-icons">menu_open</i>';
+    } else {
+     home[1].innerHTML = '<i class="material-icons">menu</i>';
+    }
+  
+}
+  
 const toggleButton = document.getElementById('toggle-button');
 const toggleButton2 = document.getElementById('toggle-button2');
 const toggleElements = document.querySelectorAll('.toggle-element');
@@ -9,11 +23,7 @@ toggleButton.addEventListener('click', function() {
     
   });
    
-   if (home[0].innerHTML === '<i class="material-icons">menu</i>') {
-       home[0].innerHTML = '<i class="material-icons">menu_open</i>';
-    } else {
-     home[0].innerHTML = '<i class="material-icons">menu</i>';
-    }
+  togglehomeicon();
 });
 
 // Event listener for the second toggle button
@@ -21,11 +31,7 @@ toggleButton2.addEventListener('click', function() {
   toggleElements.forEach(element => {
     element.classList.toggle('hidden');
   });
-   if (home[1].innerHTML === '<i class="material-icons">menu</i>') {
-     home[1].innerHTML = '<i class="material-icons">menu_open</i>';
-    } else {
-     home[1].innerHTML = '<i class="material-icons">menu</i>';
-    }
+
 });
 // Get the button element
     var button = document.getElementById('redirect-btn');
