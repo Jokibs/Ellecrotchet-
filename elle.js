@@ -21,7 +21,15 @@ window.onscroll = function() {
   prevScrollPos = currentScrollPos;
 };
 
+ function loadGoogleFonts() {
+            var link = document.createElement('link');
+            link.href = 'https://fonts.googleapis.com/icon?family=Material+Icons';
+            link.rel = 'stylesheet';
+            document.head.appendChild(link);
+        }
 
+        // Call the function to load Google Fonts
+        loadGoogleFonts();
 
 
 
