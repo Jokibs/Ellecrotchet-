@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            background-color: #87CEEB;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .cake {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 120px;
+            background-color: #FFD700;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .candle {
+            position: absolute;
+            bottom: 120px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 80px;
+            background-color: #8B4513;
+            border-radius: 5px;
+        }
+
+        .flame {
+            position: absolute;
+            bottom: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 30px;
+            background-color: #FFD700;
+            border-radius: 50%;
+            animation: flicker 0.5s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% {
+                opacity: 0.8;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="cake"></div>
+        <div class="candle"></div>
+        <div class="flame"></div>
+        <h1>Happy Birthday!</h1>
+        <p>Wishing you a day filled with joy and laughter.</p>
+    </div>
+</body>
+</html>
